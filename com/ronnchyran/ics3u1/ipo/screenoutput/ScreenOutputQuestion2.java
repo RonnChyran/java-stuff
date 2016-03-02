@@ -1,4 +1,4 @@
-/* 
+/*
 	File Name:   ScreenOutputQuestion2.java
 	Name:        Ronny Chan
 	Class:       ICS3U1-01 (B)
