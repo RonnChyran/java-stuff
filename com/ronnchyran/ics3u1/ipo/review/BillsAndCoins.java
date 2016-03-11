@@ -72,6 +72,7 @@ public class BillsAndCoins
 
     public static void main(String[] args)
     {
+	 		
         BigDecimal remainingMoneyValue, originalMoneyValue;
         TreeMap<BigDecimal, Integer> valueMap = // Initialize all valid tender divisions.
                 getBillValueMap(BILL_100_VALUE, BILL_50_VALUE, BILL_20_VALUE, BILL_10_VALUE, BILL_5_VALUE,
@@ -131,4 +132,4 @@ public class BillsAndCoins
         return value.divide(billValue).intValue();
     } // static int getRepresentableBills
 
-} // class BillsAndCoins
+} // BillsAndCoins class
