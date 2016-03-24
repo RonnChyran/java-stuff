@@ -73,7 +73,7 @@ public class SortThreeLetters
 					sortedLetters[2] = letters[1];
 				}
 			}//end else
-			System.out.println(sortedLetters[0] + ", " + sortedLetters[1] + ", " + sortedLetters[2]);
+			System.out.println("Your 3 sorted letters are " + sortedLetters[0] + ", " + sortedLetters[1] + ", " + sortedLetters[2]);
 	 } // static void main
 	 
 } // SortThreeLetters class

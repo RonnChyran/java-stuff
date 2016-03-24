@@ -16,8 +16,8 @@ public class LeastTwoPowers
 {    
     public static void main(String[] args)
     {
-	 	Scanner input = new Scanner(System.in);
 		int value, count, power;
+		Scanner input = new Scanner(System.in);
 		count = 0;
 		power = 1;
 		
@@ -26,7 +26,7 @@ public class LeastTwoPowers
 		
 		while (value > power)
 		{
-			power = (int)Math.pow(2, count);
+			power = power * 2;
 			count++;
 		}
 		
