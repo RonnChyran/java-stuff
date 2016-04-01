@@ -12,24 +12,24 @@ import java.util.*;
 
 public class Age
 {    
-	 private final static int CORRECT_AGE = 16;
     public static void main(String[] args)
     {
-	 	int guess;
+	 	int age, guess;
 		Scanner input = new Scanner(System.in);
 		
 		guess = 0;
+		age = 16;
 		
-		while (guess != CORRECT_AGE)
+		while (guess != age)
 		{
 			System.out.print("Please enter your guess: ");
 			guess = input.nextInt();
 			
-			if (guess > CORRECT_AGE)
+			if(guess > age)
 			{
 				System.out.println("Your guess is too high.");
 			}
-			else
+			else if(guess < age) 
 			{
 				System.out.println("Your guess is too low.");
 			}

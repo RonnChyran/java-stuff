@@ -17,6 +17,7 @@ public class CountEven
 {    
     public static void main(String[] args)
     {
+
 		int current, evenCount;
 		Scanner input = new Scanner(System.in);
 		evenCount = 0;
