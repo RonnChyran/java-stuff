@@ -17,7 +17,6 @@ public class SelfReverse
     public static void main(String[] args)
     {
 	   int[] valA;
-		int[] valB;
 		int arrayLength;
 		Scanner input = new Scanner(System.in);
 		
@@ -25,23 +24,40 @@ public class SelfReverse
 		arrayLength = input.nextInt();
 		
 		valA = new int[arrayLength];
-		valB = new int[arrayLength];
-		
 		for (int i = 0; i < valA.length; i++)
 		{
 			System.out.print("Enter a number: ");
 			valA[i] = input.nextInt();
 		}
 		
-		for (int i = 0; i < valB.length; i++)
-		{
-			valB[i] = valA[valA.length - i - 1];
-		}
+		//valA = copyReverseArray(valA);
+		inplaceReverseArray(valA);
 		
+		System.out.println("Reversed Array: ");
 		for (int i = 0; i < valA.length; i++)
 		{
-			System.out.println("valA: " + valA[i] + ", valB: " + valB[i]);
+			System.out.println(valA[i]);
 		}
 	 } // static void main
 	 	  
+	 public static int[] copyReverseArray(int[] array)
+	 {
+	 	int[] reversed = new int[array.length];
+	 	for (int i = 0; i < reversed.length; i++)
+		{
+			reversed[i] = array[array.length - i - 1];
+		}
+		return reversed;
+	 }
+	 
+	 public static void inplaceReverseArray(int[] array)
+	 {
+	 	for (int i = 0; i < array.length / 2; i++)
+		{
+			int correspondingIndex = array.length - i - 1;
+			int currentBottomElement = array[correspondingIndex];
+			array[correspondingIndex] = array[i];
+			array[i] = currentBottomElement;
+		}
+	 }
 }// SelfReverse class
