@@ -34,8 +34,6 @@ public class ShiftUp
 		for (int number : numbers)
 		{
 			System.out.println(number);
-		}
-	
-				
+		}		
 	 } // static void main	  
-}
+}// ShiftUp class

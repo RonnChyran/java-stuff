@@ -42,4 +42,4 @@ public class TimesTable
 		}
 		
 	 } // static void main	  
-}
+}// TimesTable class
