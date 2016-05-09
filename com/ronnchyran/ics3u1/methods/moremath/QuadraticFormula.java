@@ -3,7 +3,7 @@
 	Name:        Ronny Chan
 	Class:       ICS3U1-31 (B)
 	Date:        April 26, 2016
-	Description: Outputs the bigger number of 2
+	Description: Quadratic formula.
 	Notes:       The length of one tab (\t) will treated as 5 spaces
 	             (c) 2016 Ronny Chan Licensed under the MIT License
 */
