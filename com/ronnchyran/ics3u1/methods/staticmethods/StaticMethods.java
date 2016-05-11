@@ -1,9 +1,9 @@
 /*
-	File Name:   FormatName.java
+	File Name:   StaticMethods.java
 	Name:        Ronny Chan
 	Class:       ICS3U1-31 (B)
 	Date:        April 26, 2016
-	Description: Adds up the values of all unicode offsets in a string
+	Description: Some methods.
 	Notes:       The length of one tab (\t) will treated as 5 spaces
 	             (c) 2016 Ronny Chan Licensed under the MIT License
 */
@@ -15,11 +15,11 @@ public class StaticMethods
 {    
 	public static String welcomeMessage (String name, int visitorNum)
 	{
-		return "Welcome " + name " + !  You are visitor number " + visitorNum + ".";
+		return "Welcome " + name + " !  You are visitor number " + visitorNum + ".";
 	}
-		public static boolean evenlyDivisible (int x, int y)
+	public static boolean evenlyDivisible (int x, int y)
 	{
-		return (x == 0 && y == 0) 
+		return (x == 0 || y == 0) ? false : (x % y == 0);
 	}
 	public static void alarm(int iter)
 	{
@@ -33,19 +33,18 @@ public class StaticMethods
 			System.out.println("Alarm!");
 		}
 	}
-    public static void main(String[] args)
-    {
-	 	String firstName, lastName, formattedName;
-		int sum = 0;
-	   Scanner input = new Scanner(System.in);
-		System.out.print("Please enter first name: ");	
-	   firstName = input.nextLine();
-	 	
-		System.out.print("Please enter last name: ");	
-	   lastName = input.nextLine();
-
-		formattedName = lastName + ", " + Character.toUpperCase(firstName.charAt(0)) + ".";
-
-		System.out.println(formattedName);
-	 }
-}// FormatName class
+	public static int sumRange(int x, int y)
+	{
+		if (y < x) 
+		{
+			System.out.println("Error: second number smaller than first!");
+			return 0;
+		}
+		int n = y - x + 1;
+		return (int)(n/2.0 * (x + y));
+	}
+	
+	public static void main(String[] args)
+	{
+	}
+ }// FormatName class
