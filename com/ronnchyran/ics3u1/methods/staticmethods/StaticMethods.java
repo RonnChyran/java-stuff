@@ -47,4 +47,4 @@ public class StaticMethods
 	public static void main(String[] args)
 	{
 	}
- }// FormatName class
+ }// StaticMethods class

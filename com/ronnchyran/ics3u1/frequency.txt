@@ -1,0 +1,5 @@
+E occur(s) 4 times.
+T occur(s) 4 times.
+A T occur(s) 4 times.
+B E U occur(s) 3 times.
+S occur(s) 3 times.

@@ -32,10 +32,10 @@ public class MethodLines
 			System.out.println("Please enter the two coordinates of line " + (i+1) + ":");
 			for (int j = 0; j < 2; j++)
 			{
-				System.out.print("Coordinate " + (i+1) + " x-value: ");
+				System.out.print("Coordinate " + (j+1) + " x-value: ");
 				coord[i][j][0] = scanner.nextInt();
-				System.out.print("Coordinate " + (i+1) + " y-value: ");
-				coord[i][j][0] = scanner.nextInt();	
+				System.out.print("Coordinate " + (j+1) + " y-value: ");
+				coord[i][j][1] = scanner.nextInt();	
 			}
 		}
 		lengthLine1 = length(coord[0][0][0], coord[0][0][1], coord[0][1][0], coord[0][1][1]);
@@ -48,7 +48,7 @@ public class MethodLines
 		{
 			System.out.println("The two lines are parallel.");
 		}
-		if (slopeLine1 == -1/slopeLine2)
+		if (slopeLine1 == -1/slopeLine2 || slopeLine2 == -1/slopeLine1)
 		{
 			System.out.println("The two lines are perpendicular.");
 		}
